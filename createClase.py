@@ -2,18 +2,17 @@ import os, glob
 
 #### datos del a clase, completar
 
-ncl=27
+ncl=1
 clase='clase%d'%ncl
-contenidos=['Clustering k-means, jerárquico', 'Notebook de prueba']
-video_link='https://drive.google.com/file/d/1J5R3do8HScPkA914xzOEtGvH_9p2wyvd/preview'
-title='Algoritmos de Clustering'
+contenidos=['Introducción - Programa del Curso']
+title='Inotrducción a Ciencia de Datos'
 dia='Martes'
-fecha='23/11'
-bloque='Algoritmos de aprendizaje de máquina'
+fecha='09/08'
+bloque='Introducción'
 
 
 #### copiar archivos
-path_clases='/Users/paguirre/drive/Cursos/IMT2200_IntroCienciaDatos/imt2200_clases_local'
+path_clases='/Users/paguirre/drive/Cursos/IMT2200_IntroCienciaDatos/IMT2200_2022/imt2200_clases_local'
 os.system('cp %s/%s/IMT2200_%s.pdf clases/clases-pdf/'%(path_clases,clase,clase))
 
 #####
@@ -21,7 +20,7 @@ string_cont=''
 for cont in contenidos:
     string_cont=string_cont+'\t\t\t\t\t\t\t <li><p>%s</p></li>\n'%cont
 print(string_cont)
-strings={'claseX':clase,'https://www.youtube.com/':video_link,
+strings={'claseX':clase,
          'CLASE X: X':'CLASE %d: %s'%(ncl,title),'<li><p>ContenidoXXX</p></li>':string_cont}
 
 template=open('clases/clase-template.html','r')
