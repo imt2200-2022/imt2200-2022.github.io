@@ -2,13 +2,13 @@ import os, glob
 
 #### datos del a clase, completar
 
-ncl=1
+ncl=5
 clase='clase%d'%ncl
-contenidos=['Introducción - Programa del Curso']
-title='Inotrducción a Ciencia de Datos'
+contenidos=['Fuentes de datos']
+title='Fuentes de datos'
 dia='Martes'
-fecha='09/08'
-bloque='Introducción'
+fecha='18/08'
+bloque='Fuentes de datos'
 
 
 #### copiar archivos
